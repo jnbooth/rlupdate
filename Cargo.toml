@@ -1,0 +1,25 @@
+[package]
+name = "rlupdate"
+version = "0.1.0"
+authors = ["Joshua Booth <joshua.n.booth@gmail.com>"]
+edition = "2021"
+description = "Extract translatable messages from Qt UI files and Rust source code"
+license = "MIT"
+repository = "https://github.com/jnbooth/rlupdate"
+categories = ["development-tools"]
+keywords = ["qt"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pathdiff = "0.2.0"
+proc-macro2 = { version = "1.0", features = ["span-locations"] }
+quick-xml = "0.22"
+quote = "1.0"
+regex = "1.5"
+roxmltree = "0.14"
+xmltree = "0.10"
+serde = { version = "1.0.117", features = ["derive"] }
+serde_yaml = "0.8.17"
+structopt = "0.3"
+syn = { version = "1.0", features = ["full"] }
